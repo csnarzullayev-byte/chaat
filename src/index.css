@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Custom scrollbar and markdown overrides with Sophisticated Dark theme specs */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(212, 175, 55, 0.15);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(212, 175, 55, 0.3);
+}
+
+.markdown-body p {
+  margin-bottom: 0.75rem;
+}
+.markdown-body p:last-child {
+  margin-bottom: 0;
+}
+.markdown-body pre {
+  background-color: #0c0c0c;
+  color: #e0e0e0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #1a1a1a;
+  overflow-x: auto;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.markdown-body code {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  color: #d4af37;
+  background-color: rgba(212, 175, 55, 0.08);
+  padding: 0.125rem 0.25rem;
+  border-radius: 0.25rem;
+  border: 1px solid rgba(212, 175, 55, 0.12);
+}
+.markdown-body pre code {
+  background-color: transparent;
+  color: inherit;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+}
+.markdown-body ul, .markdown-body ol {
+  margin-left: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+.markdown-body ul {
+  list-style-type: disc;
+}
+.markdown-body ol {
+  list-style-type: decimal;
+}
+.markdown-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 0.75rem;
+}
+.markdown-body th, .markdown-body td {
+  border: 1px solid #1a1a1a;
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+}
+.markdown-body th {
+  background-color: #0c0c0c;
+  color: #d4af37;
+}
+

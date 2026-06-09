@@ -1,0 +1,6 @@
+{
+  "name": "AI Chat Assistant",
+  "description": "Google Gemini modeli asosidagi zamonaviy, tezkor va interaktiv AI Chat ilovasi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
